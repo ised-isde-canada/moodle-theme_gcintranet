@@ -29,4 +29,4 @@ $templatecontext = [
     'output' => $OUTPUT
 ];
 
-echo $OUTPUT->render_from_template('theme_gcweb/embedded', $templatecontext);
+echo $OUTPUT->render_from_template('theme_gcintranet/embedded', $templatecontext);

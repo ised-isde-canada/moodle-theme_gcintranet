@@ -1,5 +1,5 @@
 <?php
-// This file is part of the WET-BOEW-Moodle GCWeb theme for Moodle
+// This file is part of the WET-BOEW-Moodle GCIntranet theme for Moodle
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The columns layout for the WET-BOEW-Moodle GCWeb theme.
+ * The columns layout for the WET-BOEW-Moodle GCIntranet theme.
  *
- * @package   theme_gcweb
+ * @package   theme_gcintranet
  * @copyright 2016-2019 TNG Consulting Inc.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -26,14 +26,14 @@ defined('MOODLE_INTERNAL') || die();
 
 global $_PAGE;
 
-$theme = get_config('theme_gcweb');
+$theme = get_config('theme_gcintranet');
 
 // Cause the userdate() function not to fix %d in date strings. Just let them show with a zero prefix.
 
 $CFG->nofixday = true;
 
 $_PAGE['searchsettings'] = ''; // For additional hidden form fields.
-$_PAGE['themewww'] = $CFG->wwwroot . '/theme/gcweb';     // Absolute path to this theme.
+$_PAGE['themewww'] = $CFG->wwwroot . '/theme/gcintranet';     // Absolute path to this theme.
 
 // Default settings for page.
 

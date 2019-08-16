@@ -17,7 +17,7 @@
 /**
  * Settings for Custom CSS.
  *
- * @package    gcweb
+ * @package    gcintranet
  * @copyright  2016 TNG Consulting Inc. <http://www.tngconsulting.ca>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,12 +25,12 @@
 defined('MOODLE_INTERNAL') || die;
 
 // General settings.
-$page = new admin_settingpage($themename . '_about', get_string('abouttheme', 'theme_gcweb'));
+$page = new admin_settingpage($themename . '_about', get_string('abouttheme', 'theme_gcintranet'));
 
 // Define settings: About (Readme).
 $name = $themename . '/aboutreadme';
 $title = '';
-$description = get_string('choosereadme', 'theme_gcweb');
+$description = get_string('choosereadme', 'theme_gcintranet');
 $description = str_replace('<img class="img-polaroid" src="', '<img class="img-polaroid" src="' . $CFG->wwwroot .  '/theme/', $description);
 $setting = new admin_setting_description($name, $title, $description);
 $setting->set_updatedcallback('theme_reset_all_caches');

@@ -1,6 +1,6 @@
-# WET-BOEW-Moodle (GCWeb theme)
+# WET-BOEW-Moodle (GCIntranet theme)
 
-Web Experience Toolkit (WET), Moodle variant, GCWeb theme.
+Web Experience Toolkit (WET), Moodle variant, GCIntranet theme.
 
 ![Screenshot of 5 WET-BOEW-MOODLE 4.0 sub-themes](https://github.com/wet-boew/wet-boew-moodle/blob/master/pix/screenshot.png?raw=true)
 
@@ -24,7 +24,7 @@ By using this theme, organizations to focus their limited educational/training b
 
 **Status:**
 * We have completed initial development and specification design.
-* We have made a lot of progress on the GCWeb theme.
+* We have made a lot of progress on the GCIntranet theme.
 * We are starting development of the GCIntranet theme.
 * We removed the deprecated pre-2019 WET-BOEW themes including Canada.ca, GC Web Usability, GC Intranet, WET-BOEW, OGPL.
 

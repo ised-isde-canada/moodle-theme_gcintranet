@@ -17,7 +17,7 @@
 /**
  * The columns layout for the classic theme.
  *
- * @package   theme_gcweb
+ * @package   theme_gcintranet
  * @copyright 2019 TNG Consulting Inc.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -65,5 +65,5 @@ $templatecontext = [
     'flatnavigation' => $_PAGE['flatnavigation']
 ];
 
-echo $OUTPUT->render_from_template('theme_gcweb/columns', $templatecontext);
+echo $OUTPUT->render_from_template('theme_gcintranet/columns', $templatecontext);
 

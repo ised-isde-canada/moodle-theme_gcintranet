@@ -6,8 +6,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
- <h2>Thème GCWeb <abbr title="boîte à outils de l’expérience Web pour Moodle">WET-BOEW-MOODLE</abbr></h2>
- <p><img class="img-polaroid" src="gcweb/pix/screenshot.png" /></p>
+ <h2>Thème GCIntranet <abbr title="boîte à outils de l’expérience Web pour Moodle">WET-BOEW-MOODLE</abbr></h2>
+ <p><img class="img-polaroid" src="gcintranet/pix/screenshot.png" /></p>
 </div>
 <div class="well">
  <h2>Credits</h2>
@@ -29,8 +29,8 @@ Site Web&nbsp;: www.tngconsulting.ca</p>
 <p>Si pour une raison quelconque une copie de la licence publique générale GNU n\'était pas incluse dans ce projet, vous pouvez la visualiser en ligne &agrave; l\'adresse suivante: https://www.gnu.org/licenses/gpl-3.0.fr.html</p></div>
 </div>';
 // The name of our plugin.
-$string['pluginname'] = 'WET-BOEW-Moodle: GCWeb';
-$string['privacy:metadata'] = 'Le thème WET-BOEW-Moodle: GCWeb ne saufegarde aucun données personel des utilisateurs.';
+$string['pluginname'] = 'WET-BOEW-Moodle: GCIntranet';
+$string['privacy:metadata'] = 'Le thème WET-BOEW-Moodle: GCIntranet ne saufegarde aucun données personel des utilisateurs.';
 
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Gauche';

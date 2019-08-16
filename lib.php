@@ -10,8 +10,8 @@ defined('MOODLE_INTERNAL') || die();
  * @param string $tree The CSS tree.
  * @param theme_config $theme The theme config object.
  */
-function theme_gcweb_css_tree_post_processor($tree, $theme) {
-    $prefixer = new theme_gcweb\autoprefixer($tree);
+function theme_gcintranet_css_tree_post_processor($tree, $theme) {
+    $prefixer = new theme_gcintranet\autoprefixer($tree);
     $prefixer->prefix();
 }
 
@@ -21,7 +21,7 @@ function theme_gcweb_css_tree_post_processor($tree, $theme) {
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_gcweb_get_extra_scss($theme) {
+function theme_gcintranet_get_extra_scss($theme) {
     $customcss = '';
 
     //
@@ -126,9 +126,9 @@ function theme_gcweb_get_extra_scss($theme) {
  * @param array $options
  * @return bool
  */
-function theme_gcweb_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_gcintranet_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'logo' || $filearea === 'backgroundimage')) {
-        $theme = theme_config::load('gcweb');
+        $theme = theme_config::load('gcintranet');
         // By default, theme files must be cache-able by both browsers and proxies.
         if (!array_key_exists('cacheability', $options)) {
             $options['cacheability'] = 'public';
@@ -145,15 +145,15 @@ function theme_gcweb_pluginfile($course, $cm, $context, $filearea, $args, $force
  * @param theme_config $theme The theme config object.
  * @return string All fixed Sass for this theme.
  */
-function theme_gcweb_get_main_scss_content($theme) {
+function theme_gcintranet_get_main_scss_content($theme) {
     global $CFG;
 
     // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.
-    $pre = file_get_contents($CFG->dirroot . '/theme/gcweb/scss/pre.scss');
+    $pre = file_get_contents($CFG->dirroot . '/theme/gcintranet/scss/pre.scss');
      // Main CSS - Get the CSS from theme Classic.
-    $scss = file_get_contents($CFG->dirroot . '/theme/gcweb/scss/default.scss');
+    $scss = file_get_contents($CFG->dirroot . '/theme/gcintranet/scss/default.scss');
     // Post CSS - this is loaded AFTER the main scss but before the extra scss from the setting.
-    $post = file_get_contents($CFG->dirroot . '/theme/gcweb/scss/post.scss');
+    $post = file_get_contents($CFG->dirroot . '/theme/gcintranet/scss/post.scss');
 
     // Combine them together.
     return $pre . "\n" . $scss . "\n" . $post;
@@ -164,9 +164,9 @@ function theme_gcweb_get_main_scss_content($theme) {
  // *
  // * @return string compiled css
  // */
-// function theme_gcweb_get_precompiled_css() {
+// function theme_gcintranet_get_precompiled_css() {
     // global $CFG;
-    // return file_get_contents($CFG->dirroot . '/theme/gcweb/style/moodle.css');
+    // return file_get_contents($CFG->dirroot . '/theme/gcintranet/style/moodle.css');
 // }
 
 /**
@@ -175,7 +175,7 @@ function theme_gcweb_get_main_scss_content($theme) {
  * @param theme_config $theme The theme config object.
  * @return array
  */
-// function theme_gcweb_get_pre_scss($theme) {
+// function theme_gcintranet_get_pre_scss($theme) {
     // $scss = '';
     // $configurable = [
         // // Config key => [variableName, ...].

@@ -4,7 +4,7 @@
  *
  * Copyright © 2016 onwards by TNG Consulting Inc.
  *
- * The WET-BOEW-MOODLE GCWeb theme for Moodle is provided freely as open source software, can be redistributed
+ * The WET-BOEW-MOODLE GCIntranet theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
  *
  * This software is distributed in the hope that it will be useful. However, there is no warranty,
@@ -17,7 +17,7 @@
 /**
  * Main settings file.
  *
- * @package    theme_gcweb
+ * @package    theme_gcintranet
  * @copyright  2016 TNG Consulting Inc. unless otherwise noted.
  * @author     Michael Milette <www.tngconsulting.ca>
  * @license    WET-BOEW-MOODLE: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
@@ -37,11 +37,11 @@ defined('MOODLE_INTERNAL') || die;
 $CFG->nofixday  = true;
 
 // Theme name
-$themename = 'theme_gcweb';
+$themename = 'theme_gcintranet';
 
 if ($ADMIN->fulltree) {
-    $themename = 'theme_gcweb';
-    $settings = new theme_boost_admin_settingspage_tabs('themesettinggcweb', get_string('configtitle', $themename));
+    $themename = 'theme_gcintranet';
+    $settings = new theme_boost_admin_settingspage_tabs('themesettinggcintranet', get_string('configtitle', $themename));
 
     // First time or reset, remove any previous setting.
     if (empty(get_config($themename, 'init')) || (is_siteadmin() && optional_param('resettheme', 0, PARAM_INT) == 1)) {

@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace theme_gcweb\output;
+namespace theme_gcintranet\output;
 
 use coding_exception;
 use html_writer;
@@ -44,7 +44,7 @@ defined('MOODLE_INTERNAL') || die;
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_gcweb
+ * @package    theme_gcintranet
  * @copyright  2019 TNG Consulting Inc. <www.tngconsulting.ca>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -134,7 +134,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
     public function full_header() {
         global $CFG, $PAGE, $_PAGE, $OUTPUT, $USER;
 
-        // $theme = theme_config::load('gcweb');
+        // $theme = theme_config::load('gcintranet');
         $header = new stdClass();
         $header->output = $OUTPUT;
         $header->langmenu = $_PAGE['langmenu'];
@@ -169,7 +169,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         /* If secondary nav */
         $header->skiptosectnav = $_PAGE['skiptosectnav'];
 
-        return $this->render_from_template('theme_gcweb/header', $header);
+        return $this->render_from_template('theme_gcintranet/header', $header);
     }
 
     /**
@@ -181,7 +181,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         global $PAGE, $SITE;
         $title = '';
         if ($PAGE->pagetype == 'site-index') { // frontpage
-            if (empty($hometitle = get_config('theme_gcweb', 'hometitle'))) {
+            if (empty($hometitle = get_config('theme_gcintranet', 'hometitle'))) {
                 $title = get_string('home');
             } else {
                 $title = $hometitle;
@@ -189,7 +189,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         } else { // All other pages.
             $title = $PAGE->title;
         }
-        if (!empty(get_config('theme_gcweb', 'titlesitename'))) {
+        if (!empty(get_config('theme_gcintranet', 'titlesitename'))) {
             $title .= ' - ' . $SITE->fullname;
         }
         $title = format_string($title, false, ['context' => context_course::instance(SITEID), "escape" => false]);
@@ -239,7 +239,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
                 }
                 break;
             case 'frontpage': // Home page.
-                if (empty($title = get_config('gcweb', 'hometitle'))) {
+                if (empty($title = get_config('gcintranet', 'hometitle'))) {
                     $title = get_string('home');
                 } else {
                     $title = format_string($title, false);
@@ -248,27 +248,27 @@ class core_renderer extends \theme_boost\output\core_renderer {
             case 'login':
                switch ($this->page->pagetype) {
                     case 'login-index': // Sign-in / Login.
-                        $title = get_string('signon', 'theme_gcweb');
+                        $title = get_string('signon', 'theme_gcintranet');
                         break;
                     case 'login-logout': // Sign-out.
-                        $title = get_string('signout', 'theme_gcweb');
+                        $title = get_string('signout', 'theme_gcintranet');
                         break;
                     case 'login-signup': // Register.
-                        $title = get_string('register', 'theme_gcweb') . ' : ' . $title;
+                        $title = get_string('register', 'theme_gcintranet') . ' : ' . $title;
                         break;
                 }
                 break;
              case 'base':
                 switch ($this->page->pagetype) {
                     case 'login-logout': // Signout confirmation.
-                        $title = get_string('signout', 'theme_gcweb');
+                        $title = get_string('signout', 'theme_gcintranet');
                         break;
                 }
              case 'admin':
                switch ($this->page->pagetype) {
                    case 'backup-backup': // Course backup.
                         break;
-                   case 'admin-setting-themesettinggcweb': // This Theme's settings.
+                   case 'admin-setting-themesettinggcintranet': // This Theme's settings.
                         $title = get_string('themesettings', 'admin');
                         break;
                    case 'admin-user': // Browser list of users.
