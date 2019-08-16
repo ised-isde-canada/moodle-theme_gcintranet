@@ -88,3 +88,21 @@ $string['footerlist'] = '<li><a href="https://www.canada.ca/fr/contact.html">Coo
 <li><a href="https://www.canada.ca/fr/transparence/confidentialite.html">Confidentialité</a></li>';
 
 $string['symbol'] = 'Symbole du gouvernement du Canada';
+
+/* GCIntranet theme specific. */
+$string['themename'] = 'GCIntranet';
+$string['bannerdefault'] = '<span class="bold-gc">GC</span>intranet';
+$string['bannertitle'] = 'Titre de la bannière';
+$string['bannertitle_desc'] = 'Titre qui apparaîtra dans la bannière.';
+$string['bannerforeground'] = 'Couleur de premier plan de la bannière';
+$string['bannerforeground_desc'] = 'Couleur de premier plan de la barre de bannière';
+$string['bannerbackground'] = 'Couleur de fond de la bannière';
+$string['bannerbackground_desc'] = 'Couleur de fond de la barre de bannière';
+$string['bannertitleforeground'] = 'Couleur de premier plan du titre de la bannière';
+$string['bannertitleforeground_desc'] = 'Couleur de premier plan du titre de la bannière';
+$string['bannertitlebackground'] = 'Couleur de fond du titre de la bannière';
+$string['bannertitlebackground_desc'] = 'Couleur de fond du titre de la bannière';
+$string['custommenuforeground'] = 'Couleur de premier plan du menu personnalisé';
+$string['custommenuforeground_desc'] = 'Couleur de premier plan du menu personnalisé';
+$string['custommenubackground'] = 'Couleur de fond du menu personnalisé';
+$string['custommenubackground_desc'] = 'Couleur de fond du menu personnalisé';

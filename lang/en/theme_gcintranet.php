@@ -173,8 +173,25 @@ $string['footnote_desc'] = 'Displayed at the bottom of every page. Example: copy
 $string['hidelocallogin'] = 'Hide local login';
 $string['hidelocallogin_desc'] = 'Hide the local login on login page. NOTE: Only enable this if all users are using an external authentication service such as Oauth2 or SAML or you have an alternate method of logging in.';
 
-$string['styleguide'] = 'Style guide';
+/* GCIntranet theme specific. */
+$string['themename'] = 'GCIntranet';
+$string['bannerdefault'] = '<span class="bold-gc">GC</span>intranet';
+$string['bannertitle'] = 'Banner title';
+$string['bannertitle_desc'] = 'Title that will appear in the banner.';
+$string['bannerforeground'] = 'Banner foreground colour';
+$string['bannerforeground_desc'] = 'Foreground colour of the banner bar';
+$string['bannerbackground'] = 'Banner background colour';
+$string['bannerbackground_desc'] = 'Background colour of the banner bar';
+$string['bannertitleforeground'] = 'Banner title foreground colour';
+$string['bannertitleforeground_desc'] = 'Foreground colour of the banner title';
+$string['bannertitlebackground'] = 'Banner title background colour';
+$string['bannertitlebackground_desc'] = 'Background colour of the banner title';
+$string['custommenuforeground'] = 'Custom menu foreground colour';
+$string['custommenuforeground_desc'] = 'Foreground colour of the custom menu';
+$string['custommenubackground'] = 'Custom menu background colour';
+$string['custommenubackground_desc'] = 'Background colour of the custom menu';
 
+$string['styleguide'] = 'Style guide';
 $string['styleguidehtml'] = '
 <div class="alert alert-warning">
    <p>This page is still in development. Content is not rendered accurately.</p>

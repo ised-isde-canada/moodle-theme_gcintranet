@@ -53,6 +53,7 @@ if ($ADMIN->fulltree) {
     require('settings/profilefields.php');
     require('settings/header.php');
     require('settings/footer.php');
+    require('settings/gcintranet.php');
     require('settings/styleguide.php');
     require('settings/about.php');
 
